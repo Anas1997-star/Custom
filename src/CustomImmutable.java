@@ -1,25 +1,25 @@
-
-final class Immutable {
-	private final int age ;
-	public int getAge() {
-		return age;
+final class Immutable{
+	private final int id;
+	private final String name;
+	@Override
+	public String toString() {
+		return "Immutable [id=" + id + ", name=" + name + "]";
+	}
+	public int getId() {
+		return id;
 	}
 	public String getName() {
 		return name;
 	}
-	public Immutable(int age, String name) {
+	public Immutable(int id, String name) {
 		super();
-		this.age = age;
+		this.id = id;
 		this.name = name;
 	}
-
-	private final String name;
 }
 public class CustomImmutable{
 	public static void main(String[] args) {
-		Immutable i=new Immutable(25, "shaik");
-
-		System.out.println(i.getAge()+" "+i.getName());
-
+		Immutable i=new Immutable(101, "shaik");
+		System.out.println(i.getId()+" "+i.getName());
 	}
 }
