@@ -41,7 +41,9 @@ public static void main(String[] args) {
 	List<SampleComparable> li=new ArrayList<>();
 	li.add(new SampleComparable(101,"Venkat",23));
 	li.add(new SampleComparable(102,"Ajay",21));
-	li.add(new SampleComparable(102,"Imran",25));
+	li.add(new SampleComparable(103,"Imran",25));
+	li.add(new SampleComparable(104,"shaik",24));
+	li.add(new SampleComparable(105,"Ahmed",26));
 	Collections.sort(li);
 	for(SampleComparable s:li) {
 		System.out.println(s);

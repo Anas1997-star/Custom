@@ -1,18 +1,17 @@
 
-public class ThreadExample  extends Thread{
+public class ThreadExample extends Thread{
  public void run() {
-	 for(int i=0;i<10;i++) {
+	 for(int i=0;i<4;i++) {
 		 System.out.println("1st thread");
 	 }
-	for(int i=0;i<5;i++) {
+	for(int i=0;i<3;i++) {
 		System.out.println("2nd thread");
 	}
  }
  public static void main(String[] args) {
-	ThreadExample Te1=new ThreadExample();
-	ThreadExample Te2=new ThreadExample();
-	Te1.start();
-	Te2.start();
+	ThreadExample t1=new ThreadExample();
+       	t1.run();
+       	t1.run();
 	
 }
 }

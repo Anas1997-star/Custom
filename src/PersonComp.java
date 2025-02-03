@@ -14,7 +14,8 @@ public String toString() {
 public PersonCompartor() {
 	super();
 }
-public PersonCompartor(int id, String name, String address) {
+public PersonCompartor(int id, String name, String address)
+{
 	super();
 	this.id = id;
 	this.name = name;

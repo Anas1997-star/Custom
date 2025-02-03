@@ -18,10 +18,8 @@ public static void main(String[] args)
 //	
 //	Map<Object, Long> m=s.chars().mapToObj(x->(char) x).collect(Collectors.groupingBy(x->x,Collectors.counting()));
 //	System.out.println(m);
-List<Integer> li=Arrays.asList(2,3,4,5,5,1,2,4);
-Set<Integer> s=li.stream().collect(Collectors.groupingBy(x->x,Collectors.counting())).entrySet()
-.stream().filter(x->x.getValue()>1).map(x->x.getKey()).collect(Collectors.toSet());
-System.out.println(s);
-
+List<Integer> li=Arrays.asList(2,3,4,5,6,7,2,3,8);
+Set<Integer> m=li.stream().collect(Collectors.groupingBy(x->x,Collectors.counting())).entrySet().stream().filter(x->x.getValue()>1).map(x->x.getKey()).collect(Collectors.toSet());
+System.out.println(m);
 }
 }
