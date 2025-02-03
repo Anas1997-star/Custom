@@ -1,34 +1,20 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class New{
 	public static void main(String[] args) {
-	String s="skfkdabcdekdfnlkxyz";
-	  String result=   longestSubString(s);
-	  System.out.println(result);
-	}
+		List<Integer> li=Arrays.asList(2,4,3,1,5,6,3,4);
 
-	private static String longestSubString(String s) {
-		String x="",y="";
+//		int a[]= {4,3,2,4,6};
+//		Arrays.sort(a));
 		
-		for(int i=1;i<s.length()-1;i++) {
-			if(s.charAt(i)==s.charAt(i-1)+1) {
-				x=x+s.charAt(i);
-			}
-			else {
-				if(x.length()>y.length()) {
-					y=x;
-					
-				}
-				x=""+s.charAt(i);
-			}
-				
-		}
-		if(x.length()>y.length())
-		y=x;
-		return y;
+	String s="shaik ahmed";
+	Map<Object, Long> m=s.chars().mapToObj(x->(char) x).filter(x->x!=' ').collect(Collectors.groupingBy(x->x,Collectors.counting()));
+    System.out.println(m);
+	//		    		 
 	}
 }

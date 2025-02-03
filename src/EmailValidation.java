@@ -4,7 +4,7 @@ public class EmailValidation
 {
 static String s1,
 
-regex="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9+.-]+$";
+regex="^[a-zA-Z0-9_.-]+@[a-zA-z_.-]+$";
 
 public static void main(String[] args) {
 

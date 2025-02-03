@@ -1,25 +1,23 @@
 import java.util.HashSet;
-import java.util.Scanner;
 
 public class RemoveDuplicates{
 	public static void main(String[] args) {
-		
-		Scanner sc=new Scanner(System.in);
-		String s=sc.nextLine();
-		String result=removeDuplicates(s);
-		System.out.println(result);
+		String s="anas ahmed";
+        String result=removeDup(s);
+        System.out.println(result);
 	}
 
-	private static String removeDuplicates(String s) {
-		
-		StringBuilder x=new StringBuilder();
+	private static String removeDup(String s) {
+		// TODO Auto-generated method stub
 		HashSet<Character> hs=new HashSet<>();
-		for(char ch:s.toCharArray())
-		{
+		StringBuilder sb=new StringBuilder();
+		for(char ch:s.toCharArray()) {
 			if(hs.add(ch)) {
-				x.append(ch);
+				sb.append(ch);
 			}
 		}
-		return x.toString();
+		return sb.toString();
 	}
+
+	
 }

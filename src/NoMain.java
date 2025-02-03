@@ -1,18 +1,16 @@
 
 class NoMain {
 
-	static {
-		System.out.println("hello");
+	static 
+	{
+		System.out.println("before main");
 		
 	}
- {
-		System.out.println("hellow");
-	}
+   static {
+	   System.out.println("before main method");
+   }
 
-  static public   void main(String[] args) {
-		 
-	 }
-		
-		
-	
+ public static void main(String[] args) {
+	 
+ }
 }

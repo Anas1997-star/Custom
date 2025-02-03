@@ -15,9 +15,11 @@ class CustomException extends Exception {
 	catch(Exception e) {
 		System.out.println("exception is caught");
 		e.printStackTrace();
+//		System.exit(0);
 	}
 		finally {
 			System.out.println("executing finnaly block");
+			
 		}
 	
 	}

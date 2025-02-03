@@ -1,33 +1,23 @@
 import java.util.Scanner;
 
-public class Reversal {
-	
-	static String str2=" ";
-public static void main(String[] args)
-  {
-	Scanner sc=new Scanner(System.in);
-		String str=sc.next();
-		String result=reversal(str);
+public class Reversal{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		String s= sc.nextLine();
+		String result=reversal(s);
 		System.out.println(result);
-		
-  }
-	
-	static String reversal(String str) {
-		
-	for(int i=0;i<str.length();i++) {
-		char ch=str.charAt(i);
-		str2=ch+str2;
 	}
-	return str2;
 
+	static String reversal(String s) 
+	{
+		// TODO Auto-generated method stub
+		char[] ch=s.toCharArray();
+		String s1="";
+		for(int i=0;i<s.length();i++) 
+		{
+			s1=ch[i]+s1;
+		}
+		return s1;
+	}
 }
-}
-
-//for reversing entire sentence
-//String s2="this is ahmed";
-//String s3[]=s2.split(" ");
-//for(int i=s3.length-1;i>=0;i--) {
-//	   System.out.println(s3[i]);
-//}
-//}
-//}

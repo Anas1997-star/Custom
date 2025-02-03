@@ -9,15 +9,14 @@ public class NewBuilder{
 		
 	}
 	private static int  wordCount(String s) {
-		
+		char[] ch=s.toCharArray();
 		for(int i=0;i<s.length();i++) {
-			if(i==0&&s.charAt(i)!=' '||s.charAt(i)!=' '&&s.charAt(i-1)==' '){
+			if(i==0&&ch[i]!=' '||ch[i]!=' '&&ch[i-1]==' ') {
 				count++;
 			}
 		}
-		
 		return count;
-	}
+}
 }
 			
 
